@@ -1,0 +1,109 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh; 
+  background-image: url('Earth.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+  max-width: 500px; 
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3); 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input, button {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+
+#currentWeather {
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+.forecast-container {
+  max-height: 300px; 
+  overflow-y: auto; 
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.0); 
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  color: #fff;
+}
+
+
+.forecast-card {
+  background: rgba(0, 0, 0, 0.5);
+  /* border: 1px solid #ddd; */
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.forecast-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.forecast-card h3 {
+  margin: 0 0 5px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.forecast-card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .container {
+      padding: 10px;
+  }
+
+  .forecast-card {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+}
+
